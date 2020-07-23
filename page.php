@@ -11,7 +11,7 @@
  *
  * @package themeum
  */
-
+echo "page.php";
 get_header();
 ?>
 

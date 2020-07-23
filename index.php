@@ -15,54 +15,65 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
 
-
-        <div class="row">
-            <div class="container">
-                <div class="mt-3">
-                    <h3>
-                        Home page | Triangle
-                    </h3>
+    <section id="home-slider" style="background: url(<?php /*echo  get_template_directory_uri() . '/assets/img/home/slider-bg.png'; */?>) 0 100% repeat-x">
+        <div class="container">
+            <div class="row">
+                <div class="main-slider">
+                    <div class="slide-text">
+                        <h1>We Are Creative Nerds</h1>
+                        <p>Boudin doner frankfurter pig. Cow shank bresaola pork loin tri-tip tongue venison pork belly meatloaf short loin landjaeger biltong beef ribs shankle chicken andouille.</p>
+                        <a href="#" class="btn btn-common">SIGN UP</a>
+                    </div>
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/home/slider/hill.png'; ?>" class="slider-hill" alt="slider image">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/home/slider/house.png'; ?>" class="slider-house" alt="slider image">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/home/slider/sun.png'; ?>" class="slider-sun" alt="slider image">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/home/slider/birds1.png'; ?>" class="slider-birds1" alt="slider image">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/img/home/slider/birds2.png'; ?>" class="slider-birds2" alt="slider image">
                 </div>
             </div>
         </div>
+        <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
+    </section>
+    <!--/#home-slider-->
 
-<!--		--><?php
-//		if ( have_posts() ) :
-//
-//			if ( is_home() && ! is_front_page() ) :
-//				?>
-<!--				<header>-->
-<!--					<h1 class="page-title screen-reader-text">--><?php //single_post_title(); ?><!--</h1>-->
-<!--				</header>-->
-<!--				--><?php
-//			endif;
-//
-//			/* Start the Loop */
-//			while ( have_posts() ) :
-//				the_post();
-//
-//				/*
-//				 * Include the Post-Type-specific template for the content.
-//				 * If you want to override this in a child theme, then include a file
-//				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-//				 */
-//				get_template_part( 'template-parts/content', get_post_type() );
-//
-//			endwhile;
-//
-//			the_posts_navigation();
-//
-//		else :
-//
-//			get_template_part( 'template-parts/content', 'none' );
-//
-//		endif;
-//		?>
 
-	</main><!-- #main -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/img/home/icon1.png'; ?>" alt="">
+                        </div>
+                        <h2>Incredibly Responsive</h2>
+                        <p>Ground round tenderloin flank shank ribeye. Hamkevin meatball swine. Cow shankle beef sirloin chicken ground round.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/img/home/icon2.png'; ?>" alt="">
+                        </div>
+                        <h2>Superior Typography</h2>
+                        <p>Hamburger ribeye drumstick turkey, strip steak sausage ground round shank pastrami beef brisket pancetta venison.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
+                    <div class="single-service">
+                        <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
+                            <img src="<?php echo get_template_directory_uri() . '/assets/img/home/icon3.png'; ?>" alt="">
+                        </div>
+                        <h2>Swift Page Builder</h2>
+                        <p>Venison tongue, salami corned beef ball tip meatloaf bacon. Fatback pork belly bresaola tenderloin bone pork kevin shankle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#services-->
+
 
 <?php
-//get_sidebar();
+
 get_footer();
